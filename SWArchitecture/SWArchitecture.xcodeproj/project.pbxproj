@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134A3BED60953ACB60FD49B6 /* Pods_SWArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC329EB13D37FC73F21D0707 /* Pods_SWArchitecture.framework */; };
 		220FAC112334686E0063F495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC102334686E0063F495 /* AppDelegate.swift */; };
 		220FAC162334686E0063F495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220FAC142334686E0063F495 /* Main.storyboard */; };
 		220FAC192334686E0063F495 /* SWArchitecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC172334686E0063F495 /* SWArchitecture.xcdatamodeld */; };
@@ -17,6 +18,15 @@
 		220FAC4723346A590063F495 /* SWTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4623346A590063F495 /* SWTabBarViewController.swift */; };
 		220FAC4923346B4F0063F495 /* SWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4823346B4F0063F495 /* SWHomeViewController.swift */; };
 		220FAC4B233470040063F495 /* SWMvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4A233470040063F495 /* SWMvpViewController.swift */; };
+		220FAC4E2334767F0063F495 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4D2334767F0063F495 /* APIManager.swift */; };
+		220FAC50233479060063F495 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4F233479060063F495 /* HttpManager.swift */; };
+		220FAC5223347AAF0063F495 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC5123347AAF0063F495 /* UserModel.swift */; };
+		220FAC562334A4580063F495 /* SWNetworkStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC552334A4580063F495 /* SWNetworkStruct.swift */; };
+		220FAC582334A57A0063F495 /* SWPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC572334A57A0063F495 /* SWPresenter.swift */; };
+		220FAC5A2334A62A0063F495 /* SWNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC592334A62A0063F495 /* SWNetworkProtocol.swift */; };
+		220FAC5C2334A7910063F495 /* SWModelProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC5B2334A7910063F495 /* SWModelProtocal.swift */; };
+		220FAC5E2334A9330063F495 /* SWNetworkTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC5D2334A9330063F495 /* SWNetworkTypealias.swift */; };
+		220FAC602334AB0D0063F495 /* HotkeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC5F2334AB0D0063F495 /* HotkeyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,18 @@
 		220FAC4623346A590063F495 /* SWTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTabBarViewController.swift; sourceTree = "<group>"; };
 		220FAC4823346B4F0063F495 /* SWHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWHomeViewController.swift; sourceTree = "<group>"; };
 		220FAC4A233470040063F495 /* SWMvpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMvpViewController.swift; sourceTree = "<group>"; };
+		220FAC4D2334767F0063F495 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		220FAC4F233479060063F495 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		220FAC5123347AAF0063F495 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		220FAC552334A4580063F495 /* SWNetworkStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNetworkStruct.swift; sourceTree = "<group>"; };
+		220FAC572334A57A0063F495 /* SWPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPresenter.swift; sourceTree = "<group>"; };
+		220FAC592334A62A0063F495 /* SWNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNetworkProtocol.swift; sourceTree = "<group>"; };
+		220FAC5B2334A7910063F495 /* SWModelProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWModelProtocal.swift; sourceTree = "<group>"; };
+		220FAC5D2334A9330063F495 /* SWNetworkTypealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNetworkTypealias.swift; sourceTree = "<group>"; };
+		220FAC5F2334AB0D0063F495 /* HotkeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyModel.swift; sourceTree = "<group>"; };
+		C4B63785926BB099E7B69F4F /* Pods-SWArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWArchitecture.debug.xcconfig"; path = "Target Support Files/Pods-SWArchitecture/Pods-SWArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
+		E7684440B7E5003383AD02AF /* Pods-SWArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWArchitecture.release.xcconfig"; path = "Target Support Files/Pods-SWArchitecture/Pods-SWArchitecture.release.xcconfig"; sourceTree = "<group>"; };
+		EC329EB13D37FC73F21D0707 /* Pods_SWArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				134A3BED60953ACB60FD49B6 /* Pods_SWArchitecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +110,8 @@
 				220FAC272334686F0063F495 /* SWArchitectureTests */,
 				220FAC322334686F0063F495 /* SWArchitectureUITests */,
 				220FAC0E2334686E0063F495 /* Products */,
+				C17B1145C1179225C5C83BB3 /* Pods */,
+				41114F4C5D32D4772B5A8449 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +187,12 @@
 		220FAC44233469940063F495 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				220FAC4D2334767F0063F495 /* APIManager.swift */,
+				220FAC4F233479060063F495 /* HttpManager.swift */,
+				220FAC552334A4580063F495 /* SWNetworkStruct.swift */,
+				220FAC592334A62A0063F495 /* SWNetworkProtocol.swift */,
+				220FAC5B2334A7910063F495 /* SWModelProtocal.swift */,
+				220FAC5D2334A9330063F495 /* SWNetworkTypealias.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -170,8 +201,28 @@
 			isa = PBXGroup;
 			children = (
 				220FAC4A233470040063F495 /* SWMvpViewController.swift */,
+				220FAC5F2334AB0D0063F495 /* HotkeyModel.swift */,
+				220FAC5123347AAF0063F495 /* UserModel.swift */,
+				220FAC572334A57A0063F495 /* SWPresenter.swift */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		41114F4C5D32D4772B5A8449 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC329EB13D37FC73F21D0707 /* Pods_SWArchitecture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C17B1145C1179225C5C83BB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4B63785926BB099E7B69F4F /* Pods-SWArchitecture.debug.xcconfig */,
+				E7684440B7E5003383AD02AF /* Pods-SWArchitecture.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 220FAC382334686F0063F495 /* Build configuration list for PBXNativeTarget "SWArchitecture" */;
 			buildPhases = (
+				27016F6A0F93C96E3ABB2E8C /* [CP] Check Pods Manifest.lock */,
 				220FAC092334686E0063F495 /* Sources */,
 				220FAC0A2334686E0063F495 /* Frameworks */,
 				220FAC0B2334686E0063F495 /* Resources */,
+				C330447575BF29BC03336195 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,15 +353,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27016F6A0F93C96E3ABB2E8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWArchitecture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C330447575BF29BC03336195 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SWArchitecture/Pods-SWArchitecture-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SWArchitecture/Pods-SWArchitecture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		220FAC092334686E0063F495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220FAC4E2334767F0063F495 /* APIManager.swift in Sources */,
+				220FAC5E2334A9330063F495 /* SWNetworkTypealias.swift in Sources */,
+				220FAC562334A4580063F495 /* SWNetworkStruct.swift in Sources */,
+				220FAC602334AB0D0063F495 /* HotkeyModel.swift in Sources */,
+				220FAC50233479060063F495 /* HttpManager.swift in Sources */,
+				220FAC5223347AAF0063F495 /* UserModel.swift in Sources */,
+				220FAC5A2334A62A0063F495 /* SWNetworkProtocol.swift in Sources */,
 				220FAC4B233470040063F495 /* SWMvpViewController.swift in Sources */,
 				220FAC4923346B4F0063F495 /* SWHomeViewController.swift in Sources */,
+				220FAC5C2334A7910063F495 /* SWModelProtocal.swift in Sources */,
 				220FAC4723346A590063F495 /* SWTabBarViewController.swift in Sources */,
 				220FAC192334686E0063F495 /* SWArchitecture.xcdatamodeld in Sources */,
+				220FAC582334A57A0063F495 /* SWPresenter.swift in Sources */,
 				220FAC112334686E0063F495 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +593,7 @@
 		};
 		220FAC392334686F0063F495 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B63785926BB099E7B69F4F /* Pods-SWArchitecture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +612,7 @@
 		};
 		220FAC3A2334686F0063F495 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7684440B7E5003383AD02AF /* Pods-SWArchitecture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

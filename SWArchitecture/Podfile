@@ -1,0 +1,10 @@
+platform :ios, '12.0'
+
+use_frameworks!
+target 'SWArchitecture' do
+
+pod 'Alamofire', '~> 5.0.0-beta.7'
+pod 'SwiftyJSON', '~> 5.0.0'
+
+
+end
