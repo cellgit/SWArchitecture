@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		220FAC112334686E0063F495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC102334686E0063F495 /* AppDelegate.swift */; };
-		220FAC132334686E0063F495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC122334686E0063F495 /* ViewController.swift */; };
 		220FAC162334686E0063F495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220FAC142334686E0063F495 /* Main.storyboard */; };
 		220FAC192334686E0063F495 /* SWArchitecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC172334686E0063F495 /* SWArchitecture.xcdatamodeld */; };
 		220FAC1B2334686F0063F495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220FAC1A2334686F0063F495 /* Assets.xcassets */; };
 		220FAC1E2334686F0063F495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220FAC1C2334686F0063F495 /* LaunchScreen.storyboard */; };
 		220FAC292334686F0063F495 /* SWArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC282334686F0063F495 /* SWArchitectureTests.swift */; };
 		220FAC342334686F0063F495 /* SWArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC332334686F0063F495 /* SWArchitectureUITests.swift */; };
+		220FAC4723346A590063F495 /* SWTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4623346A590063F495 /* SWTabBarViewController.swift */; };
+		220FAC4923346B4F0063F495 /* SWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4823346B4F0063F495 /* SWHomeViewController.swift */; };
+		220FAC4B233470040063F495 /* SWMvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4A233470040063F495 /* SWMvpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		220FAC0D2334686E0063F495 /* SWArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		220FAC102334686E0063F495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		220FAC122334686E0063F495 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		220FAC152334686E0063F495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		220FAC182334686E0063F495 /* SWArchitecture.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SWArchitecture.xcdatamodel; sourceTree = "<group>"; };
 		220FAC1A2334686F0063F495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		220FAC2F2334686F0063F495 /* SWArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		220FAC332334686F0063F495 /* SWArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWArchitectureUITests.swift; sourceTree = "<group>"; };
 		220FAC352334686F0063F495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220FAC4623346A590063F495 /* SWTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTabBarViewController.swift; sourceTree = "<group>"; };
+		220FAC4823346B4F0063F495 /* SWHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWHomeViewController.swift; sourceTree = "<group>"; };
+		220FAC4A233470040063F495 /* SWMvpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMvpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				220FAC102334686E0063F495 /* AppDelegate.swift */,
-				220FAC122334686E0063F495 /* ViewController.swift */,
+				220FAC43233469940063F495 /* Classes */,
+				220FAC44233469940063F495 /* Config */,
+				220FAC42233469940063F495 /* Http */,
+				220FAC41233469940063F495 /* Manager */,
 				220FAC142334686E0063F495 /* Main.storyboard */,
 				220FAC1A2334686F0063F495 /* Assets.xcassets */,
 				220FAC1C2334686F0063F495 /* LaunchScreen.storyboard */,
@@ -126,6 +133,45 @@
 				220FAC352334686F0063F495 /* Info.plist */,
 			);
 			path = SWArchitectureUITests;
+			sourceTree = "<group>";
+		};
+		220FAC41233469940063F495 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		220FAC42233469940063F495 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		220FAC43233469940063F495 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				220FAC4623346A590063F495 /* SWTabBarViewController.swift */,
+				220FAC4823346B4F0063F495 /* SWHomeViewController.swift */,
+				220FAC4C233470AF0063F495 /* MVP */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		220FAC44233469940063F495 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		220FAC4C233470AF0063F495 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				220FAC4A233470040063F495 /* SWMvpViewController.swift */,
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				220FAC132334686E0063F495 /* ViewController.swift in Sources */,
+				220FAC4B233470040063F495 /* SWMvpViewController.swift in Sources */,
+				220FAC4923346B4F0063F495 /* SWHomeViewController.swift in Sources */,
+				220FAC4723346A590063F495 /* SWTabBarViewController.swift in Sources */,
 				220FAC192334686E0063F495 /* SWArchitecture.xcdatamodeld in Sources */,
 				220FAC112334686E0063F495 /* AppDelegate.swift in Sources */,
 			);

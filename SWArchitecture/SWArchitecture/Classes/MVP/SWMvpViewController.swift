@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SWMvpViewController.swift
 //  SWArchitecture
 //
 //  Created by Alan on 2019/9/20.
@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SWMvpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .white
+        
+        self.title = "MVP"
+        
     }
+    
 
+    
 
 }
-
