@@ -26,6 +26,8 @@
 		220FAC5C2334A7910063F495 /* SWModelProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC5B2334A7910063F495 /* SWModelProtocal.swift */; };
 		220FAC5E2334A9330063F495 /* SWNetworkTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC5D2334A9330063F495 /* SWNetworkTypealias.swift */; };
 		220FAC602334AB0D0063F495 /* HotkeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC5F2334AB0D0063F495 /* HotkeyModel.swift */; };
+		220FAC632334D1920063F495 /* HotkeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC612334D1920063F495 /* HotkeyCell.swift */; };
+		220FAC642334D1920063F495 /* HotkeyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220FAC622334D1920063F495 /* HotkeyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		220FAC5B2334A7910063F495 /* SWModelProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWModelProtocal.swift; sourceTree = "<group>"; };
 		220FAC5D2334A9330063F495 /* SWNetworkTypealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNetworkTypealias.swift; sourceTree = "<group>"; };
 		220FAC5F2334AB0D0063F495 /* HotkeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyModel.swift; sourceTree = "<group>"; };
+		220FAC612334D1920063F495 /* HotkeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyCell.swift; sourceTree = "<group>"; };
+		220FAC622334D1920063F495 /* HotkeyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotkeyCell.xib; sourceTree = "<group>"; };
 		C4B63785926BB099E7B69F4F /* Pods-SWArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWArchitecture.debug.xcconfig"; path = "Target Support Files/Pods-SWArchitecture/Pods-SWArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
 		E7684440B7E5003383AD02AF /* Pods-SWArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWArchitecture.release.xcconfig"; path = "Target Support Files/Pods-SWArchitecture/Pods-SWArchitecture.release.xcconfig"; sourceTree = "<group>"; };
 		EC329EB13D37FC73F21D0707 /* Pods_SWArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,8 +132,8 @@
 			children = (
 				220FAC102334686E0063F495 /* AppDelegate.swift */,
 				220FAC43233469940063F495 /* Classes */,
-				220FAC44233469940063F495 /* Config */,
 				220FAC42233469940063F495 /* Http */,
+				220FAC44233469940063F495 /* Config */,
 				220FAC41233469940063F495 /* Manager */,
 				220FAC142334686E0063F495 /* Main.storyboard */,
 				220FAC1A2334686F0063F495 /* Assets.xcassets */,
@@ -168,6 +172,12 @@
 		220FAC42233469940063F495 /* Http */ = {
 			isa = PBXGroup;
 			children = (
+				220FAC4D2334767F0063F495 /* APIManager.swift */,
+				220FAC4F233479060063F495 /* HttpManager.swift */,
+				220FAC552334A4580063F495 /* SWNetworkStruct.swift */,
+				220FAC592334A62A0063F495 /* SWNetworkProtocol.swift */,
+				220FAC5B2334A7910063F495 /* SWModelProtocal.swift */,
+				220FAC5D2334A9330063F495 /* SWNetworkTypealias.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -185,12 +195,6 @@
 		220FAC44233469940063F495 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				220FAC4D2334767F0063F495 /* APIManager.swift */,
-				220FAC4F233479060063F495 /* HttpManager.swift */,
-				220FAC552334A4580063F495 /* SWNetworkStruct.swift */,
-				220FAC592334A62A0063F495 /* SWNetworkProtocol.swift */,
-				220FAC5B2334A7910063F495 /* SWModelProtocal.swift */,
-				220FAC5D2334A9330063F495 /* SWNetworkTypealias.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -199,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				220FAC4A233470040063F495 /* SWMvpViewController.swift */,
+				220FAC612334D1920063F495 /* HotkeyCell.swift */,
+				220FAC622334D1920063F495 /* HotkeyCell.xib */,
 				220FAC5F2334AB0D0063F495 /* HotkeyModel.swift */,
 				220FAC572334A57A0063F495 /* SWPresenter.swift */,
 			);
@@ -331,6 +337,7 @@
 				220FAC1E2334686F0063F495 /* LaunchScreen.storyboard in Resources */,
 				220FAC1B2334686F0063F495 /* Assets.xcassets in Resources */,
 				220FAC162334686E0063F495 /* Main.storyboard in Resources */,
+				220FAC642334D1920063F495 /* HotkeyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +420,7 @@
 				220FAC4B233470040063F495 /* SWMvpViewController.swift in Sources */,
 				220FAC4923346B4F0063F495 /* SWHomeViewController.swift in Sources */,
 				220FAC5C2334A7910063F495 /* SWModelProtocal.swift in Sources */,
+				220FAC632334D1920063F495 /* HotkeyCell.swift in Sources */,
 				220FAC4723346A590063F495 /* SWTabBarViewController.swift in Sources */,
 				220FAC192334686E0063F495 /* SWArchitecture.xcdatamodeld in Sources */,
 				220FAC582334A57A0063F495 /* SWPresenter.swift in Sources */,

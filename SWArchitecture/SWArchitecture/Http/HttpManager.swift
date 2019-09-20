@@ -12,7 +12,7 @@ import SwiftyJSON
 import CommonCrypto
 
 
-typealias ReqSuccess = (_ responseObject: AnyObject?)->Void
+typealias ReqSuccess = (_ response: AnyObject?)->Void
 typealias ReqFailure = (_ failure: FailureStruct)->Void
 
 /// 请求出现错误时传递error或json给视图或控制器,让其处理错误
