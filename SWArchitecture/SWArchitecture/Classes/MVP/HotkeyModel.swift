@@ -24,7 +24,7 @@ extension HotkeyModel : ModelProtocal {
         HttpManager.shared.request(method: params.method, path: params.url, parameters: params.dict, isEncrypting: isEncrypting, success: { (response) in
             
             let json = JSON(response!)
-            print("json ======= \(json)")
+//            print("json ======= \(json)")
             var array = [HotkeyModel]()
             let dataArray = json.arrayValue
             for item in dataArray {

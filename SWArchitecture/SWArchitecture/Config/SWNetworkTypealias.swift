@@ -10,7 +10,6 @@ import Foundation
 import SwiftyJSON
 
 typealias SucceedTypealias = (_ model: SucceedParamsStruct<Any>) -> Void
-//typealias ErrorTypealias = (_ errorMsg : String) -> Void
 typealias FailureTypealias = (_ json : JSON) -> Void
 
 typealias SucceedMultiTypealias = (_ model: SucceedMultiParamsStruct<Any>) -> Void

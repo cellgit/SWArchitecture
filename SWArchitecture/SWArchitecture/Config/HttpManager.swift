@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import Alamofire
 import Alamofire
 import SwiftyJSON
 import CommonCrypto
@@ -41,74 +40,24 @@ struct HeaderKey {
 struct HttpManager {
     static let shared = HttpManager()
     
-    // requet: default is post
-//    public func request(method: HTTPMethod, path: String, parameters: [String : Any], isEncrypting : Bool, success: @escaping ReqSuccess, failure: @escaping ReqFailure){
-//        switch method {
-//        case .post:
-//            self.postRequest(path, parameters, isEncrypting, success, failure)
-//        case .get:
-//            self.getRequest(path, parameters, isEncrypting, success, failure)
-//        default:
-//            self.postRequest(path, parameters, isEncrypting, success, failure)
-//        }
-//    }
-    
     public func request(method: HTTPMethod, path: String, parameters: [String : Any], isEncrypting : Bool, success: @escaping ReqSuccess, failure: @escaping ReqFailure){
         let headers = self.headers(method, isEncrypting)
         print(headers)
         
         AF.request(path, method: .post, parameters: parameters, encoding: URLEncoding.httpBody, headers: headers, interceptor: .none).responseJSON { (response) in
-            if let value = response.value { // success
-                success(value as AnyObject)
-            }
-            else { // failure
+            switch response.result {
+            case .success:
+                if let value = response.value {
+                    success(value as AnyObject)
+                }
+            case .failure:
                 if let error = response.error {
-                    failure(error as! FailureStruct)
+                    let f = FailureStruct.init(error: error, json: nil)
+                    failure(f)
                 }
             }
         }
     }
-    
-    
-    
-}
-
-private extension HttpManager {
-//    // post request
-//    private func postRequest(_ path: String, _ parameters: [String : Any], _ isEncrypting: Bool, _ success: @escaping ReqSuccess, _ failure: @escaping ReqFailure) {
-//
-//        let headers = self.headers(.post, isEncrypting)
-//        print(headers)
-//
-//        AF.request(path, method: .post, parameters: parameters, encoding: URLEncoding.httpBody, headers: headers, interceptor: .none).responseJSON { (response) in
-//            if let value = response.value { // success
-//                success(value as AnyObject)
-//            }
-//            else { // failure
-//                if let error = response.error {
-//                    failure(error as! FailureStruct)
-//                }
-//            }
-//        }
-//    }
-//
-//    // get request
-//    private func getRequest(_ path: String, _ parameters: [String : Any], _ isEncrypting: Bool, _ success: @escaping ReqSuccess, _ failure: @escaping ReqFailure){
-//        let headers = self.headers(.get, isEncrypting)
-//
-//        AF.request(path, method: .get, parameters: parameters, encoding: URLEncoding.httpBody, headers: headers, interceptor: .none).responseJSON { (response) in
-//            //
-////            debugPrint("get response ==== \(response.description)")
-//            if let value = response.value { // success
-//                success(value as AnyObject)
-//            }
-//            else { // failure
-//                if let error = response.error {
-//                    failure(error as! FailureStruct)
-//                }
-//            }
-//        }
-//    }
 }
 
 extension HttpManager {

@@ -20,7 +20,6 @@
 		220FAC4B233470040063F495 /* SWMvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4A233470040063F495 /* SWMvpViewController.swift */; };
 		220FAC4E2334767F0063F495 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4D2334767F0063F495 /* APIManager.swift */; };
 		220FAC50233479060063F495 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC4F233479060063F495 /* HttpManager.swift */; };
-		220FAC5223347AAF0063F495 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC5123347AAF0063F495 /* UserModel.swift */; };
 		220FAC562334A4580063F495 /* SWNetworkStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC552334A4580063F495 /* SWNetworkStruct.swift */; };
 		220FAC582334A57A0063F495 /* SWPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC572334A57A0063F495 /* SWPresenter.swift */; };
 		220FAC5A2334A62A0063F495 /* SWNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC592334A62A0063F495 /* SWNetworkProtocol.swift */; };
@@ -65,7 +64,6 @@
 		220FAC4A233470040063F495 /* SWMvpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMvpViewController.swift; sourceTree = "<group>"; };
 		220FAC4D2334767F0063F495 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		220FAC4F233479060063F495 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
-		220FAC5123347AAF0063F495 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		220FAC552334A4580063F495 /* SWNetworkStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNetworkStruct.swift; sourceTree = "<group>"; };
 		220FAC572334A57A0063F495 /* SWPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPresenter.swift; sourceTree = "<group>"; };
 		220FAC592334A62A0063F495 /* SWNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNetworkProtocol.swift; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 			children = (
 				220FAC4A233470040063F495 /* SWMvpViewController.swift */,
 				220FAC5F2334AB0D0063F495 /* HotkeyModel.swift */,
-				220FAC5123347AAF0063F495 /* UserModel.swift */,
 				220FAC572334A57A0063F495 /* SWPresenter.swift */,
 			);
 			path = MVP;
@@ -412,7 +409,6 @@
 				220FAC562334A4580063F495 /* SWNetworkStruct.swift in Sources */,
 				220FAC602334AB0D0063F495 /* HotkeyModel.swift in Sources */,
 				220FAC50233479060063F495 /* HttpManager.swift in Sources */,
-				220FAC5223347AAF0063F495 /* UserModel.swift in Sources */,
 				220FAC5A2334A62A0063F495 /* SWNetworkProtocol.swift in Sources */,
 				220FAC4B233470040063F495 /* SWMvpViewController.swift in Sources */,
 				220FAC4923346B4F0063F495 /* SWHomeViewController.swift in Sources */,
