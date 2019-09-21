@@ -17,13 +17,8 @@ class SWMvpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if #available(iOS 13.0, *) {
-//            self.view.backgroundColor = .secondarySystemBackground
-        } else {
-            // Fallback on earlier versions
-        }
         
-        self.title = "MVP"
+        self.title = "Shortcut Key"
         self.presenter = SWPresenter.init(model: HotkeyModel(), containerView: self)
         
         setupUI()
@@ -62,13 +57,15 @@ extension SWMvpViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section > datalist.count - 1 {
+        let idx = indexPath.section
+        if idx > datalist.count - 1 {
             return UITableViewCell()
         }
         let cell: HotkeyCell = tableView.dequeueReusableCell(withIdentifier: KHotkeyCell, for: indexPath) as! HotkeyCell
         cell.selectionStyle = .none
-        cell.model = datalist[indexPath.section]
+        cell.model = datalist[idx]
         cell.backgroundColor = .clear
+        
         return cell
     }
     

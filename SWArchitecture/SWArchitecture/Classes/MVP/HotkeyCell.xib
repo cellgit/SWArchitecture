@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W01-JS-cBo">
-                        <rect key="frame" x="16" y="8" width="288" height="108"/>
+                        <rect key="frame" x="16" y="6" width="288" height="112"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8I-Y3-ZXE">
                                 <rect key="frame" x="16" y="16" width="256" height="18"/>
@@ -45,9 +45,9 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="W01-JS-cBo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ad0-id-Nv3"/>
+                    <constraint firstItem="W01-JS-cBo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="ad0-id-Nv3"/>
                     <constraint firstItem="W01-JS-cBo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="c0a-zw-zCG"/>
-                    <constraint firstAttribute="bottom" secondItem="W01-JS-cBo" secondAttribute="bottom" constant="8" id="cFz-om-6zv"/>
+                    <constraint firstAttribute="bottom" secondItem="W01-JS-cBo" secondAttribute="bottom" constant="6" id="cFz-om-6zv"/>
                     <constraint firstAttribute="trailing" secondItem="W01-JS-cBo" secondAttribute="trailing" constant="16" id="jBV-zE-vNy"/>
                 </constraints>
             </tableViewCellContentView>
