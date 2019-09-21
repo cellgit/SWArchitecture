@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.setupAppearance()
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.backgroundColor = UIColor.white
+//        window?.backgroundColor = UIColor.white
         window?.rootViewController = SWTabBarViewController()
         window?.makeKeyAndVisible()
         

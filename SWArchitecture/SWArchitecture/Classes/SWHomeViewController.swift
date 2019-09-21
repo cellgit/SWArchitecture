@@ -29,7 +29,6 @@ class SWHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
         self.title = "Architecture"
         
         initData()
@@ -53,7 +52,6 @@ class SWHomeViewController: UIViewController {
         self.view.addSubview(tableView)
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 100
-        tableView.backgroundColor = .white
         let arrayM = [KUITableViewCell]
         for str in arrayM {
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: str) // 纯代码注册

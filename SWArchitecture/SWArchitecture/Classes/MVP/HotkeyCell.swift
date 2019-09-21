@@ -38,6 +38,14 @@ class HotkeyCell: UITableViewCell {
     }
     
     func setupUI() {
+        if self.traitCollection.userInterfaceStyle == .dark {
+            // User Interface is Dark
+            containerView.backgroundColor = .secondarySystemBackground
+        } else {
+            // User Interface is Light
+            containerView.backgroundColor = .white
+        }
+        
         containerView.layer.cornerRadius = 8
         containerView.layer.masksToBounds = false   // true, 有圆角没阴影, false有圆角有阴影
         let sColor = UIColor.init(red: 242/255, green: 242/255, blue: 242/255, alpha: 1.0)  // 和table背景色一致,看不出阴影,可换成其它颜色

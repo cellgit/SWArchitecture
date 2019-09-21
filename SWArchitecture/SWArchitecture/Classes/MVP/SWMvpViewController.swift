@@ -17,7 +17,11 @@ class SWMvpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        if #available(iOS 13.0, *) {
+//            self.view.backgroundColor = .secondarySystemBackground
+        } else {
+            // Fallback on earlier versions
+        }
         
         self.title = "MVP"
         self.presenter = SWPresenter.init(model: HotkeyModel(), containerView: self)
