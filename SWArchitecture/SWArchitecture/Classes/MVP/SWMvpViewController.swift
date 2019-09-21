@@ -39,7 +39,6 @@ class SWMvpViewController: UIViewController {
         self.view.addSubview(tableView)
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 100
-//        tableView.backgroundColor = .white
         tableView.separatorStyle = .none
         let arrayM = [KHotkeyCell]
         for str in arrayM {
