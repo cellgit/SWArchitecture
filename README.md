@@ -7,10 +7,10 @@ Swift Architecture for Application via MVP
 
 ### Dark Mode: 
 
-<div align=center><img width="375" height="812" src="https://github.com/cellgit/SWArchitecture/blob/master/img/dark.png"/></div>
+<div align=center><img width="375/3" height="812/3" src="https://github.com/cellgit/SWArchitecture/blob/master/img/dark.png"/></div>
 
 ### Light Mode:
-<div align=center><img width="375" height="812" src="https://github.com/cellgit/SWArchitecture/blob/master/img/light.png"/></div>
+<div align=center><img width="375/3" height="812/3" src="https://github.com/cellgit/SWArchitecture/blob/master/img/light.png"/></div>
 
 
 一. 使用:
