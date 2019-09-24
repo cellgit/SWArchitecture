@@ -1,6 +1,10 @@
 # SWArchitecture
 Swift Architecture for Application via MVP
 
+
+https://github.com/cellgit/SWArchitecture/blob/master/img/darkmode.png
+
+
 一. 使用:
 
 - 网络请求前初始化 **Presenter**
