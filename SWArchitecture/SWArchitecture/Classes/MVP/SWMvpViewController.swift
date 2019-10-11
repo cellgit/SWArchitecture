@@ -13,13 +13,14 @@ class SWMvpViewController: UIViewController {
     var tableView: UITableView!
     var datalist = [HotkeyModel]()
     
-    var presenter: SWPresenter<HotkeyModel, SWMvpViewController>!
+//    var presenter: SWPresenter<HotkeyModel, SWMvpViewController>!
+    var presenter: SWPresenter<HotkeyViewModel, SWMvpViewController>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Shortcut Key"
-        self.presenter = SWPresenter.init(model: HotkeyModel(), containerView: self)
+        self.presenter = SWPresenter.init(model: HotkeyViewModel(), containerView: self)
         
         setupUI()
         request()
