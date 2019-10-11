@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		134A3BED60953ACB60FD49B6 /* Pods_SWArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC329EB13D37FC73F21D0707 /* Pods_SWArchitecture.framework */; };
 		22012B3523506CE200030D99 /* HotkeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22012B3423506CE200030D99 /* HotkeyViewModel.swift */; };
+		22012B372350745E00030D99 /* MvvmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22012B362350745E00030D99 /* MvvmViewController.swift */; };
+		22012B3A2350761400030D99 /* HotkeysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22012B392350761400030D99 /* HotkeysViewModel.swift */; };
 		220FAC112334686E0063F495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC102334686E0063F495 /* AppDelegate.swift */; };
 		220FAC162334686E0063F495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220FAC142334686E0063F495 /* Main.storyboard */; };
 		220FAC192334686E0063F495 /* SWArchitecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220FAC172334686E0063F495 /* SWArchitecture.xcdatamodeld */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		22012B3423506CE200030D99 /* HotkeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyViewModel.swift; sourceTree = "<group>"; };
+		22012B362350745E00030D99 /* MvvmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MvvmViewController.swift; sourceTree = "<group>"; };
+		22012B392350761400030D99 /* HotkeysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeysViewModel.swift; sourceTree = "<group>"; };
 		220AC0B6233EF08F0099C7B4 /* SWArchitecture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SWArchitecture.entitlements; sourceTree = "<group>"; };
 		220FAC0D2334686E0063F495 /* SWArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		220FAC102334686E0063F495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22012B382350746400030D99 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				22012B362350745E00030D99 /* MvvmViewController.swift */,
+				22012B392350761400030D99 /* HotkeysViewModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
 		220FAC042334686E0063F495 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +204,7 @@
 			children = (
 				220FAC4623346A590063F495 /* SWTabBarViewController.swift */,
 				220FAC4823346B4F0063F495 /* SWHomeViewController.swift */,
+				22012B382350746400030D99 /* MVVM */,
 				220FAC4C233470AF0063F495 /* MVP */,
 			);
 			path = Classes;
@@ -424,8 +438,10 @@
 				220FAC5A2334A62A0063F495 /* SWNetworkProtocol.swift in Sources */,
 				220FAC4B233470040063F495 /* SWMvpViewController.swift in Sources */,
 				220FAC4923346B4F0063F495 /* SWHomeViewController.swift in Sources */,
+				22012B372350745E00030D99 /* MvvmViewController.swift in Sources */,
 				220FAC5C2334A7910063F495 /* SWModelProtocal.swift in Sources */,
 				220FAC632334D1920063F495 /* HotkeyCell.swift in Sources */,
+				22012B3A2350761400030D99 /* HotkeysViewModel.swift in Sources */,
 				220FAC4723346A590063F495 /* SWTabBarViewController.swift in Sources */,
 				220FAC192334686E0063F495 /* SWArchitecture.xcdatamodeld in Sources */,
 				220FAC582334A57A0063F495 /* SWPresenter.swift in Sources */,

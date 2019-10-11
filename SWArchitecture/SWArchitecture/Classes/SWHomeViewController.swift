@@ -124,7 +124,9 @@ extension SWHomeViewController: UITableViewDataSource,UITableViewDelegate {
 //        vc.modalPresentationStyle = .fullScreen
 //        self.present(vc, animated: true, completion: nil)
         
-        let vc = SWMvpViewController.init()
+//        let vc = SWMvpViewController.init()
+        
+        let vc = MvvmViewController.init()
         vc.modalPresentationStyle = .automatic
         self.present(vc, animated: true, completion: nil)
         
