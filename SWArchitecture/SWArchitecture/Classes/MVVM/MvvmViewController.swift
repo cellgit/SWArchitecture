@@ -21,7 +21,6 @@ class MvvmViewController: UIViewController {
         self.title = "Shortcut Key"
         self.viewModel = HotkeysViewModel.init()
         setupUI()
-//        request()
         setupViewModel()
     }
     

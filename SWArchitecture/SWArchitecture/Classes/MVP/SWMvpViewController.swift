@@ -13,9 +13,8 @@ class SWMvpViewController: UIViewController {
     var tableView: UITableView!
     var datalist = [HotkeyModel]()
     
-//    var presenter: SWPresenter<HotkeyModel, SWMvpViewController>!
     var presenter: SWPresenter<HotkeyViewModel, SWMvpViewController>!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
