@@ -1,5 +1,5 @@
 # SWArchitecture
-Swift Architecture for Application via MVP
+Swift Architecture for Application via MVP and MVVM
 
 
 
