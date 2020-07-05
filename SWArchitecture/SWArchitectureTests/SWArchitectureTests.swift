@@ -22,6 +22,7 @@ class SWArchitectureTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        hotkey()
     }
 
     func testPerformanceExample() {
@@ -31,4 +32,10 @@ class SWArchitectureTests: XCTestCase {
         }
     }
 
+}
+
+extension SWArchitectureTests {
+    func hotkey() {
+        let _ = HotkeyModel.init(id: "1", hotkey: "o", function: "赋值")
+    }
 }

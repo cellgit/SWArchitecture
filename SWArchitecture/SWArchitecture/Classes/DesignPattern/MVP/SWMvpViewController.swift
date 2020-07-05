@@ -13,14 +13,13 @@ class SWMvpViewController: UIViewController {
     var tableView: UITableView!
     var datalist = [HotkeyModel]()
     
-    var presenter: SWPresenter<HotkeyModel, SWMvpViewController>!
-
+    var presenter: SWPresenter<HotkeyViewModel, SWMvpViewController>!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Shortcut Key"
-        self.presenter = SWPresenter.init(model: HotkeyModel(), containerView: self)
-        
+        self.presenter = SWPresenter.init(viewModel: HotkeyViewModel(), containerView: self)
         setupUI()
         request()
     }
@@ -34,7 +33,8 @@ class SWMvpViewController: UIViewController {
     }
     
     func setupUI() {
-        tableView = UITableView.init(frame: self.view.frame, style: .grouped)
+        let frame = CGRect(x: 0, y: 0, width: KScreeenWidth, height: KScreeenHeight - KSafeTop)
+        tableView = UITableView.init(frame: frame, style: .grouped)
         self.view.addSubview(tableView)
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 100

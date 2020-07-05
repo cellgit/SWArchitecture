@@ -9,21 +9,21 @@
 import UIKit
 import Foundation
 
-/// M: model, V: view或者vc
+/// M: model或viewModel, V: view或者vc
 class SWPresenter<M: ModelProtocal, V: ViewProtocol>: NSObject {
-    var model: M!
+    var viewModel: M!
     var containerView: V!
     
     override init() {
         super.init()
     }
-    convenience init(model: M, containerView: V) {
+    convenience init(viewModel: M, containerView: V) {
         self.init()
-        self.model = model
+        self.viewModel = viewModel
         self.containerView = containerView
     }
     func request(_ params: NetworkParamsStruct) {
-        self.model.requestData(params: params, isEncrypting: true, success: { (data) in
+        self.viewModel.requestData(params: params, isEncrypting: true, success: { (data) in
             self.containerView.display(data: data)
         }) { failure  in
             print("数据请求失败error===\(String(describing: failure.error))")
@@ -34,19 +34,19 @@ class SWPresenter<M: ModelProtocal, V: ViewProtocol>: NSObject {
 
 /// M: model, V: view或者vc
 class AIPresenterSecond<M: ModelProtocal, V: ViewSecondProtocol>: NSObject {
-    var model: M!
+    var viewModel: M!
     var containerView: V!
     
     override init() {
         super.init()
     }
-    convenience init(model: M, containerView: V) {
+    convenience init(viewModel: M, containerView: V) {
         self.init()
-        self.model = model
+        self.viewModel = viewModel
         self.containerView = containerView
     }
     func request(_ params: NetworkParamsStruct) {
-        self.model.requestData(params: params, isEncrypting: true, success: { (data) in
+        self.viewModel.requestData(params: params, isEncrypting: true, success: { (data) in
             self.containerView.displaySecond(data: data)
         }) { failure  in
             print("数据请求失败error===\(String(describing: failure.error))")

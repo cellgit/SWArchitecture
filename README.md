@@ -1,5 +1,17 @@
 # SWArchitecture
-Swift Architecture for Application via MVP
+Swift Architecture for Application via MVP and MVVM
+
+
+
+
+
+### Dark Mode: 
+
+<div align=center><img width="125" height="270.67" src="https://github.com/cellgit/SWArchitecture/blob/master/img/dark.png"/></div>
+
+### Light Mode:
+<div align=center><img width="125" height="270.67" src="https://github.com/cellgit/SWArchitecture/blob/master/img/light.png"/></div>
+
 
 一. 使用:
 
@@ -55,6 +67,7 @@ extension SWMvpViewController: ViewProtocol {
 - **V** 进行网络请求,然后通过两个协议(请求成功和请求失败)返回请求数据,进行展示数据
 - **P** 通过使用泛型,实现整个项目调用同一类方法,这样我们就可以把更多时间用到数据解析和UI绘制上
 - **M** 数据模型,负责解析数据,将请求json数据转化成模型数据
+- **VM** 负责解析数据,将请求json数据转化成模型数据
 
 
 五. 协议: 项目中主要有两类协议: 
@@ -64,6 +77,9 @@ extension SWMvpViewController: ViewProtocol {
 
 
 
+---
+
+#### MVVM: MVVM设计模式(未使用Rxswift)
 ---
 本项目旨在以最简单的方式实现**MVP**架构,并可以在实际生产中快速运用
 

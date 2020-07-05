@@ -17,6 +17,7 @@ struct SWCellStruct {
 
 enum SWHomeCellIdEnum: String {
     case mvp = "mvp"
+    case mvvm = "mvvm"
     case unknown = "unknown"
 }
 
@@ -37,7 +38,7 @@ class SWHomeViewController: UIViewController {
     
     func initData() {
         let data0 = SWCellStruct.init(id: SWHomeCellIdEnum.mvp.rawValue, title: SWHomeCellIdEnum.mvp.rawValue, image: "")
-        let data1 = SWCellStruct.init(id: SWHomeCellIdEnum.mvp.rawValue, title: SWHomeCellIdEnum.mvp.rawValue, image: "")
+        let data1 = SWCellStruct.init(id: SWHomeCellIdEnum.mvvm.rawValue, title: SWHomeCellIdEnum.mvp.rawValue, image: "")
         let data2 = SWCellStruct.init(id: SWHomeCellIdEnum.mvp.rawValue, title: SWHomeCellIdEnum.mvp.rawValue, image: "")
         
         datalist = [data0,
@@ -67,7 +68,7 @@ extension SWHomeViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datalist.count * 10
+        return datalist.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -86,8 +87,8 @@ extension SWHomeViewController: UITableViewDataSource,UITableViewDelegate {
         switch id {
         case SWHomeCellIdEnum.mvp.rawValue:
             cell.textLabel?.text = SWHomeCellIdEnum.mvp.rawValue
-        case SWHomeCellIdEnum.mvp.rawValue:
-            cell.textLabel?.text = SWHomeCellIdEnum.mvp.rawValue
+        case SWHomeCellIdEnum.mvvm.rawValue:
+            cell.textLabel?.text = SWHomeCellIdEnum.mvvm.rawValue
         default:
             cell.textLabel?.text = SWHomeCellIdEnum.mvp.rawValue
         }
@@ -98,9 +99,57 @@ extension SWHomeViewController: UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = SWMvpViewController.init()
-        vc.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(vc, animated: true)
+        // push
+//        let vc = SWMvpViewController.init()
+//        vc.hidesBottomBarWhenPushed = true
+//       self.navigationController?.pushViewController(vc, animated: true)
+        
+        // 带nav的presenter
+//        let vc = SWMvpViewController()
+//        vc.modalTransitionStyle = .coverVertical
+//        let nc = UINavigationController.init(rootViewController: vc)
+//        let appDelegate = UIApplication.shared.delegate
+//        appDelegate?.window??.rootViewController?.definesPresentationContext = true
+//        nc.modalPresentationStyle = .overCurrentContext
+//        appDelegate?.window??.rootViewController?.present(nc, animated: true, completion: nil)
+        
+        
+        // 不带nav的presenter,且iOS13顶部会留有空条
+//        let vc = SWMvpViewController.init()
+//        vc.modalTransitionStyle = .coverVertical
+//        vc.modalPresentationStyle = .overCurrentContext
+//        self.present(vc, animated: true, completion: nil)
+        
+        // 全部展示
+//        let vc = SWMvpViewController.init()
+//        vc.modalPresentationStyle = .fullScreen
+//        self.present(vc, animated: true, completion: nil)
+        
+//        let vc = SWMvpViewController.init()
+        
+        let id = datalist[indexPath.row].id
+        
+        switch id {
+        case SWHomeCellIdEnum.mvp.rawValue:
+            let vc = SWMvpViewController.init()
+            vc.modalPresentationStyle = .automatic
+            self.present(vc, animated: true, completion: nil)
+        case SWHomeCellIdEnum.mvvm.rawValue:
+            let vc = MvvmViewController.init()
+            vc.modalPresentationStyle = .automatic
+            self.present(vc, animated: true, completion: nil)
+        default:
+            let vc = SWMvpViewController.init()
+            vc.modalPresentationStyle = .automatic
+            self.present(vc, animated: true, completion: nil)
+        }
+        
+        // 不带nav的presenter,iOS13顶部不会留有空条
+//        let vc = SWMvpViewController.init()
+//        let appDelegate = UIApplication.shared.delegate
+//        appDelegate?.window??.rootViewController?.definesPresentationContext = true
+//        vc.modalPresentationStyle = .overCurrentContext
+//        appDelegate?.window??.rootViewController?.present(vc, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

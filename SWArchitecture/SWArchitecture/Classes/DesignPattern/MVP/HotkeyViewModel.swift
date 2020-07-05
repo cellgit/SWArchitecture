@@ -1,30 +1,20 @@
 //
-//  HotkeyModel.swift
+//  HotkeyViewModel.swift
 //  SWArchitecture
 //
-//  Created by Alan on 2019/9/20.
+//  Created by Alan on 2019/10/11.
 //  Copyright © 2019 liuhongli. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import SwiftyJSON
 
-struct HotkeyModel {
-    /// id
-    var id: String = ""
-    /// 快捷键
-    var hotkey: String = ""
-    /// 功能描述
-    var function: String = ""
-}
-
-extension HotkeyModel : ModelProtocal {
-    func requestData(params: NetworkParamsStruct, isEncrypting: Bool, success: @escaping SucceedTypealias, failure: @escaping ReqFailure){
-        
+class HotkeyViewModel: ModelProtocal {
+    func requestData(params: NetworkParamsStruct, isEncrypting: Bool, success: @escaping SucceedTypealias, failure: @escaping ReqFailure) {
         HttpManager.shared.request(method: params.method, path: params.url, parameters: params.dict, isEncrypting: isEncrypting, success: { (response) in
             
             let json = JSON(response!)
-//            print("json ======= \(json)")
+            print("json view model======= \(json)")
             var array = [HotkeyModel]()
             let dataArray = json.arrayValue
             for item in dataArray {
@@ -40,4 +30,3 @@ extension HotkeyModel : ModelProtocal {
         }
     }
 }
-
